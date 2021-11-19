@@ -1,0 +1,9 @@
+file = "practice.txt"
+character_2 = input("What is your character's name? ")
+with open(filename, 'a') as file_object:
+    file_object.write(character_2)
+
+file = open("practice.txt", "r")
+print(file.read())
+
+file_2 = open("practice.txt", "w")
