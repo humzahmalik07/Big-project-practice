@@ -18,5 +18,35 @@ def first_note_add():
   if add_note == "no":
     quit()  
 
+def main_menu():
+    print(""" Hi!, Welcome to the Notes Program 
+    
+  In this program, you will be able to create, edit and delete notes.
+  
+  You will be allowed maximum 10 notes on this program. 
+  
+  *Notes*: Press space at the start when editing an existing file. 
+           Press enter to start a new line""")
+    print("\n")
+
+valid_actions = ["create a file", "edit a file", "delete a file", "Close the program"]
+
+def menu():
+        """ Prints out the menu for all the possible actions
+        taken by the user """
+        print("""Choose an action:
+    """)
+        for input in valid_actions:
+            print(f"* {input}")
+
+
+
+def intro():
+  print(input("What would you like to do today? "))
+
+
+main_menu()
+menu()
+intro()
 first_note()
 first_note_add()
